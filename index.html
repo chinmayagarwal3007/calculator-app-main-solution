@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="themes">
+
+    <div class="icon">
+      <h2>calc</h2>
+    </div>
+
+    <div class="theme">
+
+      <div class="numbers">
+        <p> <span class="o">1</span> <span class="t">2</span> <span class="th">3</span></p>
+      </div>
+
+      <style data="test" type="text/css"></style>
+
+
+      <div class="slidecontainer">
+
+        <div class="text">
+          <p class="text1">THEME</p>
+        </div>
+
+        <div class="slid">
+          <input type="range" max="100" value="0" class="slider" id="myRange">
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="input">
+    <p class="value"></p>
+  </div>
+
+
+
+  <div class="main">
+
+    <div class="part1">
+
+      <div class="seven">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="7">7</button>
+      </div>
+
+      <div class="eight">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="8">8</button>
+      </div>
+
+      <div class="nine">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="9">9</button>
+      </div>
+
+      <div class="delete">
+        <button type="button" name="button" class="btn btn2" onclick="myDelete()" style="font-size:.75rem; background-color: hsl(225, 21%, 49%); color: white">DEL</button>
+      </div>
+
+    </div>
+
+    <div class="part2">
+
+      <div class="four">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="4">4</button>
+      </div>
+
+      <div class="five">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="5">5</button>
+      </div>
+
+      <div class="six">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="6">6</button>
+      </div>
+
+      <div class="plus">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="+">+</button>
+      </div>
+
+    </div>
+
+    <div class="part3">
+
+      <div class="one">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="1">1</button>
+      </div>
+
+      <div class="two">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="2">2</button>
+      </div>
+
+      <div class="three">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="3">3</button>
+      </div>
+
+      <div class="minus">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="-">-</button>
+      </div>
+
+    </div>
+
+    <div class="part4">
+
+      <div class="dot">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value=".">.</button>
+      </div>
+
+      <div class="zero">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="0">0</button>
+      </div>
+
+      <div class="devide">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="/">/</button>
+      </div>
+
+      <div class="multiply">
+        <button type="button" name="button" class="btn" onclick="myFunction(this)" value="x">x</button>
+      </div>
+
+    </div>
+
+    <div class="part5">
+
+      <div class="reset">
+        <button type="button" name="button" class="btn1 btn2" onclick="myReset()" style="font-size:0.75rem; background-color: hsl(225, 21%, 49%); color: white">RESET</button>
+      </div>
+
+      <div class="equal">
+        <button type="button" name="button" class="btn1" onclick="myEqual()" style="background-color: hsl(6, 63%, 50%); color:white">=</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/chinmayagarwal3007">Chinmay Agarwal</a>.
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
