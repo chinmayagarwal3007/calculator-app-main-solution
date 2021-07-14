@@ -216,6 +216,12 @@ let y = "";
 
 function myEqual(){
   var s = document.getElementsByClassName("value")[0].innerHTML
+  
+  if (s[s.length - 1] == "+" || s[s.length - 1] == "-" || s[s.length - 1] == "/" || s[s.length - 1] == "x" ){
+      document.getElementsByClassName("value")[0].innerHTML = "ERROR";
+  }
+  else{
+  
   for(let i=0; i<s.length; i++){
     if (s[i] == "+" || s[i] == "-" || s[i] == "/" || s[i] == "x" ){
       f = i;
@@ -241,5 +247,5 @@ function myEqual(){
   }
 a = 0
 t = 0
-
+  }
 }
