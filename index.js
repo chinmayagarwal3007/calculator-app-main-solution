@@ -218,7 +218,7 @@ function myEqual(){
   var s = document.getElementsByClassName("value")[0].innerHTML
   
   if (s[s.length - 1] == "+" || s[s.length - 1] == "-" || s[s.length - 1] == "/" || s[s.length - 1] == "x" ){
-      document.getElementsByClassName("value")[0].innerHTML = "ERROR";
+      document.getElementsByClassName("value")[0].innerHTML = "Error";
   }
   else{
   
