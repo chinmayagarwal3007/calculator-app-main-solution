@@ -158,6 +158,19 @@ function myFunction(x) {
       a = 1;
     }
   }
+  
+if (s.length == 1 && s == "0"){
+  if (x.value == "+" || x.value == "-" || x.value == "/" || x.value == "x" ){
+     document.getElementsByClassName("value")[0].innerHTML = document.getElementsByClassName("value")[0].innerHTML + x.value;
+  }
+  else{
+     document.getElementsByClassName("value")[0].innerHTML = x.value;
+  }
+  
+}  
+
+else{  
+  
 if (x.value == "+" || x.value == "-" || x.value == "/" || x.value == "x" ){
   if (a == 0){
     document.getElementsByClassName("value")[0].innerHTML = document.getElementsByClassName("value")[0].innerHTML + x.value;
@@ -185,9 +198,10 @@ else{
   document.getElementsByClassName("value")[0].innerHTML = document.getElementsByClassName("value")[0].innerHTML + x.value;
 }
 }
+}
 
 function myReset() {
-    document.getElementsByClassName("value")[0].innerHTML = "" ;
+    document.getElementsByClassName("value")[0].innerHTML = "0" ;
     a = 0;
     t = 0;
 }
